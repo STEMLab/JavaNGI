@@ -68,16 +68,16 @@ public class ShapeConvertUtil {
                         
                         if(!pointText.equalsIgnoreCase("EMPTY")) {
                                 pointTexts.add((Point) geometry);
-                                pointTextsDBF.add(createDBFContents((AbstractFeatureType) feature, i));
+                                pointTextsDBF.add(DbaseFileRecordGenerator.createDBFContents((AbstractFeatureType) feature, i));
                         } else if (geometry.getGeometryType().equalsIgnoreCase("POINT")) {
                                 points.add((Point) geometry);
-                                pointsDBF.add(createDBFContents((AbstractFeatureType) feature, i));
+                                pointsDBF.add(DbaseFileRecordGenerator.createDBFContents((AbstractFeatureType) feature, i));
                         } else if (geometry.getGeometryType().equalsIgnoreCase("LINESTRING")) {
                                 lineStrings.add((LineString) geometry);
-                                lineStringsDBF.add(createDBFContents((AbstractFeatureType) feature, i));
+                                lineStringsDBF.add(DbaseFileRecordGenerator.createDBFContents((AbstractFeatureType) feature, i));
                         } else if(geometry.getGeometryType().equalsIgnoreCase("POLYGON")) {
                                 polygons.add((Polygon) geometry);
-                                polygonsDBF.add(createDBFContents((AbstractFeatureType) feature, i));
+                                polygonsDBF.add(DbaseFileRecordGenerator.createDBFContents((AbstractFeatureType) feature, i));
                         }
                 }
                 
@@ -183,33 +183,4 @@ public class ShapeConvertUtil {
                 }
         }
         
-        private static ArrayList<Object> createDefaultDBFContents(AbstractFeatureType feature, int idx) {
-                ArrayList<Object> contents = new ArrayList<Object>();
-                
-                /*
-                 * default content
-                 */
-                contents.add(feature.getLayerID());
-                contents.add(feature.getLayerName());
-                contents.add(feature.getRecordID().get(idx));
-                contents.add(feature.getUFID().get(idx));
-                
-                /*
-                 * 
-                 */
-                
-                if(!feature.getPoint_text().get(idx).equalsIgnoreCase("EMPTY")) {
-                    contents.add(feature.getPoint_text().get(idx));    
-                }
-
-                return contents;
-        }
-        
-        private static Object createDBFContents(AbstractFeatureType feature, int idx) {
-                ArrayList<Object> contents = createDefaultDBFContents(feature, idx);
-                
-                
-                return contents.toArray();
-        }
-
 }
