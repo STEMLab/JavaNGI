@@ -8,12 +8,12 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Beach extends AbstractFeatureType{ // �ؼ����� C0152261
-	private ArrayList<String> name;					// ��Ī
+public class Beach extends AbstractFeatureType{ // 해수욕장 C0152261
+	private ArrayList<String> name;        // 명칭
 		
 	public Beach(){
 		super();
-		layerName = "C0010000";
+		layerName = "C0152261";
 		name = new ArrayList<String>();
 		
 		metaDataTableName = "beachmetadata";

@@ -8,13 +8,13 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Building extends AbstractFeatureType{ // �ǹ� B0010000
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> classification;		// ����
-	private ArrayList<String> type;					// ����
-	private ArrayList<String> purpose;				// �뵵
-	private ArrayList<String> cycle;				// ����
-	private ArrayList<Long> floors;				// ��
+public class Building extends AbstractFeatureType{      // 건물 B0010000
+	private ArrayList<String> name;                // 명칭
+	private ArrayList<String> classification;      // 구분
+	private ArrayList<String> type;                // 종류
+	private ArrayList<String> purpose;             // 용도
+	private ArrayList<String> cycle;               // 주기
+	private ArrayList<Long> floors;                // 층수
 		
 	public Building(){
 		super();

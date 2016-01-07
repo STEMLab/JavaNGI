@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Wall extends AbstractFeatureType{ // ���� B0020000
-	private ArrayList<String> classification;		// ����
-	private ArrayList<String> material;				// ����
+public class Wall extends AbstractFeatureType{          // 담장 B0020000
+	private ArrayList<String> classification;      // 구분
+	private ArrayList<String> material;            // 재질
 		
 	public Wall(){
 		super();

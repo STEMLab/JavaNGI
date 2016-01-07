@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class BulletinBoard extends AbstractFeatureType{ // �Խ��� C0400000
-	private ArrayList<String> classification;		// ����
+public class BulletinBoard extends AbstractFeatureType{ // 광고판 C0400000
+	private ArrayList<String> classification;      // 구분
 		
 	public BulletinBoard(){
 		super();

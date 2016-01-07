@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class AdministrationBoundary extends AbstractFeatureType{ // �������		G0010000
-	private ArrayList<String> name;						// ��Ī
-	private ArrayList<String> classification;			// ����
+public class AdministrationBoundary extends AbstractFeatureType{ // 행정경계 G0010000
+	private ArrayList<String> name;	                       // 명칭
+	private ArrayList<String> classification;              //구분
 		
 	public AdministrationBoundary(){
 		super();

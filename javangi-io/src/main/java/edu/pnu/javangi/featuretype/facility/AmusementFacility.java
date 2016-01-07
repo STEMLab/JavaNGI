@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class AmusementFacility extends AbstractFeatureType{ // ���̽ü� C0380000
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> classification;		// ����
+public class AmusementFacility extends AbstractFeatureType{     // 놀이시설 C0380000
+	private ArrayList<String> name;                // 명칭
+	private ArrayList<String> classification;      // 구분
 		
 	public AmusementFacility(){
 		super();

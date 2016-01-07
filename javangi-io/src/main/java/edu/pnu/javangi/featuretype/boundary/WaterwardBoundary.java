@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class WaterwardBoundary extends AbstractFeatureType{ // �����������		G0020000
-	private ArrayList<String> name;						// ��Ī
-	private ArrayList<String> form;						// ����
+public class WaterwardBoundary extends AbstractFeatureType{     // 수부 지형경계 G0020000
+	private ArrayList<String> name;	               // 명칭
+	private ArrayList<String> form;                // 형태
 		
 	public WaterwardBoundary(){
 		super();
