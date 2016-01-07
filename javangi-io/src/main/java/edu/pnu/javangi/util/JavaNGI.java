@@ -287,4 +287,7 @@ public class JavaNGI {
                 }
         }
 
+        public void exportToShape() {
+                ShapeConvertUtil.convertNGIToShape(null, featureTypeList);
+        }
 }
