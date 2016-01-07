@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class FarmlandSystem extends AbstractFeatureType{ // ������	D0010000
-	private ArrayList<String> classification;		// ����
+public class FarmlandSystem extends AbstractFeatureType{        // 경지계 D0010000
+	private ArrayList<String> classification;      // 구분
 		
 	public FarmlandSystem(){
 		super();

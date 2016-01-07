@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Lattice extends AbstractFeatureType{ // ����	H0037335
+public class Lattice extends AbstractFeatureType{       // 격자 H0037335
 		
 	public Lattice(){
 		super();

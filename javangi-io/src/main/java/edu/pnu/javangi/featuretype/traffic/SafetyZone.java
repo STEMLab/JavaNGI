@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class SafetyZone extends AbstractFeatureType { // �������� A0053326
-	private ArrayList<String> structure;		// ����
-	private ArrayList<String> name;			// ��Ī
+public class SafetyZone extends AbstractFeatureType {   // 안전지대 A0053326
+	private ArrayList<String> structure;   // 구조
+	private ArrayList<String> name;        // 명칭
 	
 	public SafetyZone(){
 		super();

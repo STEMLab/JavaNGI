@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class TributarySystem extends AbstractFeatureType{ // ������ D0020000
-	private ArrayList<String> classification;		// ����
+public class TributarySystem extends AbstractFeatureType{       // 지류계 D0020000
+	private ArrayList<String> classification;              // 구분
 		
 	public TributarySystem(){
 		super();

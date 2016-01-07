@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class WellWaterSprings extends AbstractFeatureType{ // �칰/����� C0090000
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> form;					// ����
+public class WellWaterSprings extends AbstractFeatureType{      // 우물/약수터 C0090000
+	private ArrayList<String> name;        // 명칭
+	private ArrayList<String> form;        // 형태
 		
 	public WellWaterSprings(){
 		super();

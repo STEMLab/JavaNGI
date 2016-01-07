@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class RailwayBoundary extends AbstractFeatureType { // ö����� A0160024
+public class RailwayBoundary extends AbstractFeatureType {      // 철도경계 A0160024
 	public RailwayBoundary(){
 		super();
 		layerName = "A0160024";

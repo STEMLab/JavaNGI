@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class CentralReservation extends AbstractFeatureType{ // ���κи��� C0520000
-	private ArrayList<String> structure;			// ����
+public class CentralReservation extends AbstractFeatureType{    // 도로분리대 C0520000
+	private ArrayList<String> structure;                   // 구조
 		
 	public CentralReservation(){
 		super();

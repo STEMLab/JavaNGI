@@ -8,13 +8,13 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Embankment extends AbstractFeatureType{ // ���� C0050000
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> classification;		// ����
-	private ArrayList<String> material;				// ����
-	private ArrayList<String> topBottom;			// ���ϱ���
-	private ArrayList<Double> extension;			// ����
-	private ArrayList<Double> height;				// ����
+public class Embankment extends AbstractFeatureType{    // 제방 C0050000
+	private ArrayList<String> name;                // 명칭
+	private ArrayList<String> classification;      // 구분
+	private ArrayList<String> material;            // 재질
+	private ArrayList<String> topBottom;           // 상/하구분
+	private ArrayList<Double> extension;           // 연장
+	private ArrayList<Double> height;              // 높이
 		
 	public Embankment(){
 		super();

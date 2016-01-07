@@ -8,11 +8,11 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Tower extends AbstractFeatureType{ // ž C0340000
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> classification;		// ����
-	private ArrayList<String> material;				// ����
-	private ArrayList<String> etc;					// ��Ÿ
+public class Tower extends AbstractFeatureType{        // 탑 C0340000
+	private ArrayList<String> name;                // 명칭
+	private ArrayList<String> classification;      // 구분
+	private ArrayList<String> material;            // 재질
+	private ArrayList<String> etc;                 // 기타
 		
 	public Tower(){
 		super();

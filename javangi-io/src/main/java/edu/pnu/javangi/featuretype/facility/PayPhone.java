@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class PayPhone extends AbstractFeatureType{ // ������ȭ C0363361
+public class PayPhone extends AbstractFeatureType{      // 공중전화 C0363361
 		
 	public PayPhone(){
 		super();

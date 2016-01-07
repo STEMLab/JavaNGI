@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class RiverBoundary extends AbstractFeatureType{ // ��õ���	E0010001
+public class RiverBoundary extends AbstractFeatureType{ // 하천경계 E0010001
 		
 	public RiverBoundary(){
 		super();

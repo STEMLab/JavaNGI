@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Observatory extends AbstractFeatureType{ // ������ C0260000
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> purpose;				// �뵵
+public class Observatory extends AbstractFeatureType{   // 관측소 C0260000
+	private ArrayList<String> name;                // 명칭
+	private ArrayList<String> purpose;             // 용도
 		
 	public Observatory(){
 		super();

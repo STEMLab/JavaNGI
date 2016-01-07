@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Lighting extends AbstractFeatureType{ // ���� C0220000
-	private ArrayList<String> classification;		// ����
+public class Lighting extends AbstractFeatureType{      // 조명 C0220000
+	private ArrayList<String> classification;      // 구분
 		
 	public Lighting(){
 		super();

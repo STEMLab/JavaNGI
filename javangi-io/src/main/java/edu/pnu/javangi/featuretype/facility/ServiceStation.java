@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class ServiceStation extends AbstractFeatureType{ // �ްԼ� C0443363
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> purpose;				// �뵵
+public class ServiceStation extends AbstractFeatureType{        // 휴게소 C0443363
+	private ArrayList<String> name;	               // 명칭
+	private ArrayList<String> purpose;             // 용도
 		
 	public ServiceStation(){
 		super();

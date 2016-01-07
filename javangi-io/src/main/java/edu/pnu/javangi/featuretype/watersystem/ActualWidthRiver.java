@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class ActualWidthRiver extends AbstractFeatureType{ // ������õ	E0032111
+public class ActualWidthRiver extends AbstractFeatureType{      // 실폭하천 E0032111
 		
 	public ActualWidthRiver(){
 		super();

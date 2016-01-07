@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class SafetyZoneSpeedBump extends AbstractFeatureType { // ��������(���ӹ�����) A0053328
+public class SafetyZoneSpeedBump extends AbstractFeatureType {  // 안전지대(과속방지턱) A0053328
 	public SafetyZoneSpeedBump(){
 		super();
 		layerName = "A0053328";

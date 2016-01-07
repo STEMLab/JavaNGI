@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class BankingCutting extends AbstractFeatureType{ // ����/����	F0030000
-	private ArrayList<String> classification;			// ����
-	private ArrayList<String> topBottom;				// ���ϱ���
+public class BankingCutting extends AbstractFeatureType{        // 성/절토 F0030000
+	private ArrayList<String> classification;              // 구분
+	private ArrayList<String> topBottom;                   // 상/하구분
 		
 	public BankingCutting(){
 		super();

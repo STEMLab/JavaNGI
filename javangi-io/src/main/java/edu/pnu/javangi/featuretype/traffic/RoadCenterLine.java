@@ -8,18 +8,18 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class RoadCenterLine extends AbstractFeatureType{ // �����߽ɼ� A0020000
-	private ArrayList<String> number;				// ���ι�ȣ
-	private ArrayList<String> name;				// ��Ī
-	private ArrayList<String> classification;				// ���α���
-	private ArrayList<String> startPoint;			// ����
-	private ArrayList<String> endPoint;			// ����
-	private ArrayList<String> packaging;			// ��������
-	private ArrayList<String> centralReservation;	// �и�������
-	private ArrayList<Long> numberOfRoad;			// ���μ�
-	private ArrayList<Double> width;				// ������
-	private ArrayList<String> oneSidePassing;		// �Ϲ�����
-	private ArrayList<String> etc;					// ��Ÿ
+public class RoadCenterLine extends AbstractFeatureType{        // 도로중심선 A0020000
+	private ArrayList<String> number;              // 도로번호
+	private ArrayList<String> name;	               // 명칭
+	private ArrayList<String> classification;      // 도로구분
+	private ArrayList<String> startPoint;          // 시점
+	private ArrayList<String> endPoint;            // 종점
+	private ArrayList<String> packaging;           // 포장재질
+	private ArrayList<String> centralReservation;  // 분리대유무
+	private ArrayList<Long> numberOfRoad;          // 차로수
+	private ArrayList<Double> width;               // 도로폭
+	private ArrayList<String> oneSidePassing;      // 일방통행
+	private ArrayList<String> etc;                 // 기타
 	
 	public RoadCenterLine(){
 		super();

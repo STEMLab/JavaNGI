@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Camp extends AbstractFeatureType{ // �߿��� C0270000
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> etc;					// ��Ÿ
+public class Camp extends AbstractFeatureType{  // 야영지 C0270000
+	private ArrayList<String> name;        // 명칭
+	private ArrayList<String> etc;         // 기타
 		
 	public Camp(){
 		super();

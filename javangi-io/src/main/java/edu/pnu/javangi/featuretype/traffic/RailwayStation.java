@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class RailwayStation extends AbstractFeatureType{ // ������(ö����) A0131122
-	private ArrayList<String> name;		// ��Ī
+public class RailwayStation extends AbstractFeatureType{        // 정거장 A0131122
+	private ArrayList<String> name;        // 명칭
 	
 	public RailwayStation(){
 		super();

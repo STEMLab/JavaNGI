@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class GuardFence extends AbstractFeatureType{ // ����å C0530000
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> material;				// ����
+public class GuardFence extends AbstractFeatureType{    // 방지책 C0530000
+	private ArrayList<String> name;	               // 명칭
+	private ArrayList<String> material;            // 재질
 		
 	public GuardFence(){
 		super();

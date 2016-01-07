@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Statue extends AbstractFeatureType{ // ���� C0350000
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> material;				// ����
+public class Statue extends AbstractFeatureType{        // 동상 C0350000
+	private ArrayList<String> name;	               // 명칭
+	private ArrayList<String> material;            // 재질
 		
 	public Statue(){
 		super();

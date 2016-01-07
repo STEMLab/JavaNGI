@@ -8,10 +8,10 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class PlaceName extends AbstractFeatureType{ // ����	H0040000
-	private ArrayList<String> name;				// ��Ī
-	private ArrayList<String> classification;	// ����
-	private ArrayList<String> form;				// ����
+public class PlaceName extends AbstractFeatureType{     // 지명 H0040000
+	private ArrayList<String> name;                // 명칭
+	private ArrayList<String> classification;      // 구분
+	private ArrayList<String> form;                // 형태
 		
 	public PlaceName(){
 		super();

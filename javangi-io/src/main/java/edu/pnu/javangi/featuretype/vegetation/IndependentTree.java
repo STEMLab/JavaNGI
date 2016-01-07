@@ -8,15 +8,15 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class IndependentTree extends AbstractFeatureType{ // ������	D0030000
-	private ArrayList<String> managementNumber; 		// ������ȣ
-	private ArrayList<String> name; 					// ��Ī
-	private ArrayList<String> classification; 			// ����
-	private ArrayList<Double> diameter; 				// ����
-	private ArrayList<Double> height; 					// ����
-	private ArrayList<Double> age;						// ����
-	private ArrayList<String> species;					// ����
-	private ArrayList<String> etc; 						// ��Ÿ
+public class IndependentTree extends AbstractFeatureType{       // 독립수 D0030000
+	private ArrayList<String> managementNumber;    // 관리번호
+	private ArrayList<String> name;                // 명칭
+	private ArrayList<String> classification;      // 구분
+	private ArrayList<Double> diameter;            // 직경(둘레)
+	private ArrayList<Double> height;              // 높이
+	private ArrayList<Double> age;                 // 수령
+	private ArrayList<String> species;             // 수종
+	private ArrayList<String> etc;                 // 기타
 		
 	public IndependentTree(){
 		super();

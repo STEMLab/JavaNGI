@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Mountain extends AbstractFeatureType{ // ���		H0059153
-	private ArrayList<String> name;				// ���
-	private ArrayList<Double> height;				// ����
+public class Mountain extends AbstractFeatureType{      // 산/산맥 H0059153
+	private ArrayList<String> name;        // 산명
+	private ArrayList<Double> height;      // 높이
 		
 	public Mountain(){
 		super();

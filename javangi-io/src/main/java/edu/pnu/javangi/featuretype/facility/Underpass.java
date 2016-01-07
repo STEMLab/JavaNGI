@@ -8,12 +8,12 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Underpass extends AbstractFeatureType{ // ���ϵ� C0453322
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<Double> extension;			// ����
-	private ArrayList<Double> width;				// ��
-	private ArrayList<Double> height;				// ����
-	private ArrayList<String> etc;					// ��Ÿ
+public class Underpass extends AbstractFeatureType{     // 지하도 C0453322
+	private ArrayList<String> name;        // 명칭
+	private ArrayList<Double> extension;   // 연장
+	private ArrayList<Double> width;       // 폭
+	private ArrayList<Double> height;      // 높이
+	private ArrayList<String> etc;         // 기타
 		
 	public Underpass(){
 		super();

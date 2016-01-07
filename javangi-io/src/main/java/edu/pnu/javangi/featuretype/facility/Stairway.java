@@ -8,10 +8,10 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Stairway extends AbstractFeatureType{ // ��� C0390000
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> classification;		// �뵵
-	private ArrayList<Double> width;				// ��
+public class Stairway extends AbstractFeatureType{      // 계단 C0390000
+	private ArrayList<String> name;	               // 명칭
+	private ArrayList<String> classification;      // 구조
+	private ArrayList<Double> width;               // 폭
 		
 	public Stairway(){
 		super();

@@ -8,12 +8,12 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class RiverCenterLine extends AbstractFeatureType{ // ��õ�߽ɼ�	E0020000
-	private ArrayList<Long> riverNumber;				// ��õ��ȣ
-	private ArrayList<String> name;						// ��Ī
-	private ArrayList<String> classification;			// ����
-	private ArrayList<String> form;						// ����
-	private ArrayList<String> state;					// ����
+public class RiverCenterLine extends AbstractFeatureType{       // 하천중심선 E0020000
+	private ArrayList<Long> riverNumber;           // 하천번호
+	private ArrayList<String> name;                // 명칭
+	private ArrayList<String> classification;      // 구분
+	private ArrayList<String> form;                // 형태
+	private ArrayList<String> state;               // 상태
 		
 	public RiverCenterLine(){
 		super();

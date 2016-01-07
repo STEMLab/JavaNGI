@@ -8,10 +8,10 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class TubularWell extends AbstractFeatureType{ // ���� C0106312
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> purpose;				// �뵵
-		
+public class TubularWell extends AbstractFeatureType{   // 관정 C0106312
+	private ArrayList<String> name;                // 명칭
+	private ArrayList<String> purpose;             // 용도
+	
 	public TubularWell(){
 		super();
 		layerName = "C0106312";

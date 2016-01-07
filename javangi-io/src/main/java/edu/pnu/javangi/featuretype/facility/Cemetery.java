@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Cemetery extends AbstractFeatureType{ // ���� C0285311
+public class Cemetery extends AbstractFeatureType{ // 묘지 C0285311
 		
 	public Cemetery(){
 		super();

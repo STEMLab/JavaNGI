@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Pit extends AbstractFeatureType{ // ä���� C0210000
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> classification;		// ����
+public class Pit extends AbstractFeatureType{   // 채취장 C0210000
+	private ArrayList<String> name;                // 명칭
+	private ArrayList<String> classification;      // 구분
 		
 	public Pit(){
 		super();

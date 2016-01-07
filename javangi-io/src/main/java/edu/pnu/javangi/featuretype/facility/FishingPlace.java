@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class FishingPlace extends AbstractFeatureType{ // ������ C0142263
-	private ArrayList<String> name;					// ��Ī
+public class FishingPlace extends AbstractFeatureType{  // 낚시터 C0142263
+	private ArrayList<String> name;                // 명칭
 		
 	public FishingPlace(){
 		super();

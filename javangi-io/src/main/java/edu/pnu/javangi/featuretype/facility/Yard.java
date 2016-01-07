@@ -8,10 +8,10 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Yard extends AbstractFeatureType{ // ��ġ�� C0200000
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> purpose;				// �뵵
-	private ArrayList<String> managementAgency;		// �������
+public class Yard extends AbstractFeatureType{          // 적치장 C0200000
+	private ArrayList<String> name;                // 명칭
+	private ArrayList<String> purpose;             // 용도
+	private ArrayList<String> managementAgency;    // 관리기관
 		
 	public Yard(){
 		super();

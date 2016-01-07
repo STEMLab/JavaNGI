@@ -8,12 +8,12 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class ReferencePoint extends AbstractFeatureType{ // ������ H0020000
-	private ArrayList<String> classification;		// ����
-	private ArrayList<String> grade;				// ���
-	private ArrayList<String> number;				// ��ȣ
-	private ArrayList<String> coordinate;			// ��ǥ
-	private ArrayList<Double> elevation;			// ǥ��
+public class ReferencePoint extends AbstractFeatureType{        // 기준점 H0020000
+	private ArrayList<String> classification;      // 구분
+	private ArrayList<String> grade;               // 등급
+	private ArrayList<String> number;              // 번호
+	private ArrayList<String> coordinate;          // 좌표
+	private ArrayList<Double> elevation;           // 표고
 		
 	public ReferencePoint(){
 		super();

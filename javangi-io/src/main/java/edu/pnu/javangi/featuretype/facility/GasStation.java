@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class GasStation extends AbstractFeatureType{ // ������ C0423365
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> type;					// ����
+public class GasStation extends AbstractFeatureType{    // 주유소 C0423365
+	private ArrayList<String> name;	               // 명칭
+	private ArrayList<String> type;                // 종류
 		
 	public GasStation(){
 		super();

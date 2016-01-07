@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class RiverPortRoute extends AbstractFeatureType { // ����뼱 A0222257
-	private ArrayList<String> name;		// ��Ī
+public class RiverPortRoute extends AbstractFeatureType {       // 나루노선 A0222257
+	private ArrayList<String> name;                // 명칭
 	
 	public RiverPortRoute(){
 		super();

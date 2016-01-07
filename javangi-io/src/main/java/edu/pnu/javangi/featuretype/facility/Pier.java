@@ -8,10 +8,10 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Pier extends AbstractFeatureType{ // �ܱ� C0080000
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> purpose;				// �뵵
-	private ArrayList<String> material;				// ����
+public class Pier extends AbstractFeatureType{  // 잔교 C0080000
+	private ArrayList<String> name;        // 명칭
+	private ArrayList<String> purpose;     // 용도
+	private ArrayList<String> material;    // 재질
 		
 	public Pier(){
 		super();

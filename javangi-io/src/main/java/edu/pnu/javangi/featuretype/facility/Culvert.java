@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Culvert extends AbstractFeatureType{ // �ϰ� C0070000
+public class Culvert extends AbstractFeatureType{       // 암거 C0070000
 	public Culvert(){
 		super();
 		layerName = "C0070000";

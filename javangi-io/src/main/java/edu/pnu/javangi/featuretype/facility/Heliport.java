@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Heliport extends AbstractFeatureType{ // ����� C0556354
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> purpose;				// �뵵
+public class Heliport extends AbstractFeatureType{      // 헬기장 C0556354
+	private ArrayList<String> name;                // 명칭
+	private ArrayList<String> purpose;             // 용도
 		
 	public Heliport(){
 		super();

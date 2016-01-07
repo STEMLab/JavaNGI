@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class FishFarm extends AbstractFeatureType{ // ����� C0130000
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> purpose;				// �뵵
+public class FishFarm extends AbstractFeatureType{      // 양식장 C0130000
+	private ArrayList<String> name;                // 명칭
+	private ArrayList<String> purpose;             // 용도
 		
 	public FishFarm(){
 		super();

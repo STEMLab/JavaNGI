@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class ContourLine extends AbstractFeatureType{ // ���		F0010000
-	private ArrayList<String> classification;			// ����
-	private ArrayList<Double> value;						// ����ġ
+public class ContourLine extends AbstractFeatureType{   // 등고선 F0010000
+	private ArrayList<String> classification;      // 구분
+	private ArrayList<Double> value;               // 등고수치
 		
 	public ContourLine(){
 		super();

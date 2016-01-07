@@ -8,12 +8,12 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class StorageTank extends AbstractFeatureType{ // ������ C0170000
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> classification;		// ����
-	private ArrayList<String> purpose;				// �뵵
-	private ArrayList<Double> area;					// ����
-	private ArrayList<String> managementAgency;		// �������
+public class StorageTank extends AbstractFeatureType{   // 저장조 C0170000
+	private ArrayList<String> name;                // 명칭
+	private ArrayList<String> classification;      // 구분
+	private ArrayList<String> purpose;             // 용도
+	private ArrayList<Double> area;                // 면적
+	private ArrayList<String> managementAgency;    // 관리기관
 		
 	public StorageTank(){
 		super();

@@ -8,11 +8,11 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class LakeReservoir extends AbstractFeatureType{ // ȣ��/������	E0052114
-	private ArrayList<String> name;						// ��Ī
-	private ArrayList<String> purpose;					// �뵵
-	private ArrayList<Double> area;						// ����
-	private ArrayList<String> managementAgency;			// �������
+public class LakeReservoir extends AbstractFeatureType{ // 호수/저수지 E0052114
+	private ArrayList<String> name;                // 명칭
+	private ArrayList<String> purpose;             // 용도
+	private ArrayList<Double> area;                // 면적
+	private ArrayList<String> managementAgency;    // 관리기관
 		
 	public LakeReservoir(){
 		super();

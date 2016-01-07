@@ -8,10 +8,10 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Farm extends AbstractFeatureType{ // ����	D0040000
-	private ArrayList<String> name; 		// ��Ī
-	private ArrayList<String> purpose; 		//
-	private ArrayList<String> etc;			// ��Ÿ
+public class Farm extends AbstractFeatureType{  // 목장 D0040000
+	private ArrayList<String> name;        // 명칭
+	private ArrayList<String> purpose;     // 용도
+	private ArrayList<String> etc;         // 기타
 		
 	public Farm(){
 		super();

@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class WaterDirection extends AbstractFeatureType{ // ��������	E0042326
+public class WaterDirection extends AbstractFeatureType{        // 유수방향 E0042326
 		
 	public WaterDirection(){
 		super();

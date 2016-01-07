@@ -8,10 +8,10 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class UnderpassEntrance extends AbstractFeatureType{ // ���ϵ��Ա� C0463374
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> purpose;				// �뵵
-	private ArrayList<String> managementAgency;		// �������
+public class UnderpassEntrance extends AbstractFeatureType{     // 지하도입구 C0463374
+	private ArrayList<String> name;                // 명칭
+	private ArrayList<String> purpose;             // 용도
+	private ArrayList<String> managementAgency;    // 관리기관
 		
 	public UnderpassEntrance(){
 		super();

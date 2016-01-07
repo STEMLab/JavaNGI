@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Isobath extends AbstractFeatureType{ // ��ɼ�		E0082123
-	private ArrayList<String> classification;			// ����
-	private ArrayList<Double> value;					// ��ɼ�ġ
+public class Isobath extends AbstractFeatureType{       // 해안선 E0082123
+	private ArrayList<String> classification;      // 구분
+	private ArrayList<Double> value;               // 등심수치
 		
 	public Isobath(){
 		super();

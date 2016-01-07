@@ -8,11 +8,11 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Tunnel extends AbstractFeatureType{ // �ͳ� A0110020
-	private ArrayList<String> name;			// ��Ī
-	private ArrayList<Double> extension;	// ����
-	private ArrayList<Double> width;		// ��
-	private ArrayList<Double> height;		// ����
+public class Tunnel extends AbstractFeatureType{        // 터널 A0110020
+	private ArrayList<String> name;        // 명칭
+	private ArrayList<Double> extension;   // 연장
+	private ArrayList<Double> width;       // 폭
+	private ArrayList<Double> height;      // 높이
 	
 	public Tunnel(){
 		super();

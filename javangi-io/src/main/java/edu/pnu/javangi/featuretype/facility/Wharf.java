@@ -8,10 +8,10 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Wharf extends AbstractFeatureType{ // �ε� C0025336
-	private ArrayList<String> purpose;				// �뵵
-	private ArrayList<String> material;				// ����
-	private ArrayList<String> managementAgency;		// �������
+public class Wharf extends AbstractFeatureType{         // 부두 C0025336
+	private ArrayList<String> purpose;             // 용도
+	private ArrayList<String> material;            // 재질
+	private ArrayList<String> managementAgency;    // 관리기관
 		
 	public Wharf(){
 		super();

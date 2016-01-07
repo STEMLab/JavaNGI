@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Manhole extends AbstractFeatureType{ // ��Ȧ C0240000
-	private ArrayList<String> classification;					// ����
+public class Manhole extends AbstractFeatureType{       // 맨홀 C0240000
+	private ArrayList<String> classification;      // 구분
 		
 	public Manhole(){
 		super();

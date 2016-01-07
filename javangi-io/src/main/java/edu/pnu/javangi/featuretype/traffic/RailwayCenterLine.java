@@ -8,12 +8,12 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class RailwayCenterLine extends AbstractFeatureType { // ö���߽ɼ� A0171119
-	private ArrayList<String> name;				// ��Ī
-	private ArrayList<String> classification;				// ����
-	private ArrayList<String> structure;			// ����
-	private ArrayList<String> managementAgency;	// �������
-	private ArrayList<String> etc;					// ��Ÿ
+public class RailwayCenterLine extends AbstractFeatureType {    // 철도중심선 A0171119
+	private ArrayList<String> name;                // 명칭
+	private ArrayList<String> classification;      // 구분
+	private ArrayList<String> structure;           // 구조
+	private ArrayList<String> managementAgency;    // 관리기관
+	private ArrayList<String> etc;                 // 기타
 	
 	public RailwayCenterLine(){
 		super();

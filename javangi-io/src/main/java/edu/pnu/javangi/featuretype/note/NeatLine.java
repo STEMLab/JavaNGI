@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class NeatLine extends AbstractFeatureType{ // ������	H0010000
-	private ArrayList<String> name;				// ������
-	private ArrayList<String> code;				// �����ڵ�
+public class NeatLine extends AbstractFeatureType{      // 도곽선 H0010000
+	private ArrayList<String> name;                // 도엽명
+	private ArrayList<String> code;	               // 도엽코드
 		
 	public NeatLine(){
 		super();

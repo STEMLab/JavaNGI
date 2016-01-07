@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Crossroad extends AbstractFeatureType{ // ������ A0080000
-	private ArrayList<String> name;	// ��Ī
-	private ArrayList<String> type;	// ����
+public class Crossroad extends AbstractFeatureType{     // 교차로 A0080000
+	private ArrayList<String> name;        // 명칭
+	private ArrayList<String> type;        // 종류
 	
 	public Crossroad(){
 		super();

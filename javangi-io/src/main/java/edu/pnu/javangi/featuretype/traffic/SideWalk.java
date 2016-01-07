@@ -8,11 +8,11 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class SideWalk extends AbstractFeatureType { // �ε�(����) A0033320
-	private ArrayList<Double> width;			// ��
-	private ArrayList<String> material;		// ����
-	private ArrayList<String> bicycleRoad;		// �����ŵ�������
-	private ArrayList<String> type;			// ����
+public class SideWalk extends AbstractFeatureType {     // 인도(보도) A0033320
+	private ArrayList<Double> width;       // 폭
+	private ArrayList<String> material;    // 재질
+	private ArrayList<String> bicycleRoad; // 자전거도로유무
+	private ArrayList<String> type;        // 종류
 	
 	public SideWalk(){
 		super();

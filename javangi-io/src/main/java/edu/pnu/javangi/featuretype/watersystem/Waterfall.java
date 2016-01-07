@@ -8,10 +8,10 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Waterfall extends AbstractFeatureType{ // ����	E0072325
-	private ArrayList<String> name;						// ��Ī
-	private ArrayList<Double> height;					// ����
-	private ArrayList<String> etc;						// ��Ÿ
+public class Waterfall extends AbstractFeatureType{     // 폭포 E0072325
+	private ArrayList<String> name;                // 명칭
+	private ArrayList<Double> height;              // 높이
+	private ArrayList<String> etc;                 // 기타
 		
 	public Waterfall(){
 		super();

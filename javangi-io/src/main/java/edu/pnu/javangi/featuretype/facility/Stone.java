@@ -8,11 +8,11 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Stone extends AbstractFeatureType{ // ��/���� C0330000
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> classification;		// ����
-	private ArrayList<Double> height;				// ����
-	private ArrayList<String> etc;					// ��Ÿ
+public class Stone extends AbstractFeatureType{ // 비석/기념비 C0330000
+	private ArrayList<String> name;	               // 명칭
+	private ArrayList<String> classification;      // 구분
+	private ArrayList<Double> height;              // 높이
+	private ArrayList<String> etc;                 // 기타
 		
 	public Stone(){
 		super();

@@ -8,11 +8,11 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Lighthouse extends AbstractFeatureType{ // ��� C0160000
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> purpose;				// �뵵
-	private ArrayList<String> form;					// ����
-	private ArrayList<String> managementAgency;		// �������
+public class Lighthouse extends AbstractFeatureType{    // 등대 C0160000
+	private ArrayList<String> name;                // 명칭
+	private ArrayList<String> purpose;             // 용도
+	private ArrayList<String> form;                // 형태
+	private ArrayList<String> managementAgency;    // 관리기관
 		
 	public Lighthouse(){
 		super();

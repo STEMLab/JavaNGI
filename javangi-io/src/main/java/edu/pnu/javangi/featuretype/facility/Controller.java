@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Controller extends AbstractFeatureType{ // ���ܱ� C0503375
-	private ArrayList<String> classification;		// ����
-	private ArrayList<String> managementAgency;		// �������
+public class Controller extends AbstractFeatureType{    // 차단기 C0503375
+	private ArrayList<String> classification;      // 구분
+	private ArrayList<String> managementAgency;    // 관리기관
 		
 	public Controller(){
 		super();

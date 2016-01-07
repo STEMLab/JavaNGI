@@ -8,11 +8,11 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class CaveEntrance extends AbstractFeatureType{ // �����Ա�		F0057215
-	private ArrayList<String> name;					// �̸�
-	private ArrayList<String> form;					// ����
-	private ArrayList<Double> extension;			// ����ġ
-	private ArrayList<Double> height;				// ����
+public class CaveEntrance extends AbstractFeatureType{  // 동굴입구 F0057215
+	private ArrayList<String> name;        // 명칭
+	private ArrayList<String> form;        // 형태
+	private ArrayList<Double> extension;   // 연장  
+	private ArrayList<Double> height;      // 높이
 		
 	public CaveEntrance(){
 		super();

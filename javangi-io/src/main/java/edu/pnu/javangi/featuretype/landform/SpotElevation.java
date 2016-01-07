@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class SpotElevation extends AbstractFeatureType{ // ǥ����	F0020000
-	private ArrayList<Double> value;				// ��ġ
+public class SpotElevation extends AbstractFeatureType{ // 표고점 F0020000
+	private ArrayList<Double> value;               // 수치
 		
 	public SpotElevation(){
 		super();

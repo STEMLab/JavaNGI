@@ -8,10 +8,10 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class ParkingLot extends AbstractFeatureType{ // ������ C0430000
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> classification;		// ����
-	private ArrayList<Double> capacity;				// ���뷮
+public class ParkingLot extends AbstractFeatureType{    // 주차장 C0430000
+	private ArrayList<String> name;	               // 명칭
+	private ArrayList<String> classification;      // 구분
+	private ArrayList<Double> capacity;            // 수용량
 		
 	public ParkingLot(){
 		super();

@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Platform extends AbstractFeatureType { // �°��� A0191221
-	private ArrayList<String> name;		// ��Ī
+public class Platform extends AbstractFeatureType {     // 승강장 A0191221
+	private ArrayList<String> name;        // 명칭 
 	
 	public Platform(){
 		super();

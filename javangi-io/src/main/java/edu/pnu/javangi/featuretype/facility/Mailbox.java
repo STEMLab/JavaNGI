@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Mailbox extends AbstractFeatureType{ // ��ü�� C0373362
+public class Mailbox extends AbstractFeatureType{       // 우체통 C0373362
 		
 	public Mailbox(){
 		super();

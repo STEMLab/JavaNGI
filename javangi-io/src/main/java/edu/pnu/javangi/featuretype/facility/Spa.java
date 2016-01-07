@@ -8,10 +8,10 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Spa extends AbstractFeatureType{ // ��õ C0125335
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> ingredient;			// �ּ���
-	private ArrayList<String> etc;					// ��Ÿ
+public class Spa extends AbstractFeatureType{   // 온천 C0125335
+	private ArrayList<String> name;	       // 명칭
+	private ArrayList<String> ingredient;  // 주성분
+	private ArrayList<String> etc;         // 기타
 		
 	public Spa(){
 		super();

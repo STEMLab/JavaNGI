@@ -8,12 +8,12 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class RetainingWall extends AbstractFeatureType{ // �˺�		F0040000
-	private ArrayList<String> type;					// ����
-	private ArrayList<String> topBottom;			// ���ϱ���
-	private ArrayList<Double> extension;			// ����
-	private ArrayList<Double> height;				// ����ġ
-	private ArrayList<String> material;				// ����
+public class RetainingWall extends AbstractFeatureType{ // 옹벽 F0040000
+	private ArrayList<String> type;        // 종류
+	private ArrayList<String> topBottom;   // 상하구분
+	private ArrayList<Double> extension;   // 연장
+	private ArrayList<Double> height;      // 높이
+	private ArrayList<String> material;    // 재질
 		
 	public RetainingWall(){
 		super();

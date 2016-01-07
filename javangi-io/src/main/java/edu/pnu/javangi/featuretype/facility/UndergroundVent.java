@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class UndergroundVent extends AbstractFeatureType{ // ����ȯ�ⱸ C0470000
-	private ArrayList<String> purpose;				// �뵵
-	private ArrayList<String> managementAgency;		// �������
+public class UndergroundVent extends AbstractFeatureType{       // 지하환기구 C0470000
+	private ArrayList<String> purpose;             // 용도
+	private ArrayList<String> managementAgency;    // 관리기관
 		
 	public UndergroundVent(){
 		super();

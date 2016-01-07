@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class CulturalAssets extends AbstractFeatureType{ // ��ȭ�� C0310000
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> form;					// ����
+public class CulturalAssets extends AbstractFeatureType{        // 문화재 C0310000
+	private ArrayList<String> name;                        // 명칭
+	private ArrayList<String> form;                        // 형태
 		
 	public CulturalAssets(){
 		super();

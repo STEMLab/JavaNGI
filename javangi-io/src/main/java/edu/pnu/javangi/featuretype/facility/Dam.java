@@ -8,13 +8,13 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Dam extends AbstractFeatureType{ // �� C0010000
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> purpose;				// �뵵
-	private ArrayList<Double> width;				// ��
-	private ArrayList<Double> height;				// ����
-	private ArrayList<Double> area;					// ����
-	private ArrayList<String> managementAgency;		// �������
+public class Dam extends AbstractFeatureType{           // 댐 C0010000
+	private ArrayList<String> name;                // 명칭
+	private ArrayList<String> purpose;             // 용도
+	private ArrayList<Double> width;               // 폭
+	private ArrayList<Double> height;              // 높이
+	private ArrayList<Double> area;                // 면적
+	private ArrayList<String> managementAgency;    // 관리기관
 		
 	public Dam(){
 		super();

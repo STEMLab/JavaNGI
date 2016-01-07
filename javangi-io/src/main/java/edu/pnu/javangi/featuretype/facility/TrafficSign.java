@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class TrafficSign extends AbstractFeatureType{ // ǥ�� C0410000
-	private ArrayList<String> purpose;				// �뵵
+public class TrafficSign extends AbstractFeatureType{   // 표지 C0410000
+	private ArrayList<String> purpose;     // 용도
 		
 	public TrafficSign(){
 		super();

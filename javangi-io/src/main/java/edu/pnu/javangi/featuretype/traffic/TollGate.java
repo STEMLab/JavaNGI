@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class TollGate extends AbstractFeatureType{ // ���¡���� C0540000
-	private ArrayList<String> name;					// ��Ī
+public class TollGate extends AbstractFeatureType{      // 요금징수소 C0540000
+	private ArrayList<String> name;                // 명칭
 		
 	public TollGate(){
 		super();

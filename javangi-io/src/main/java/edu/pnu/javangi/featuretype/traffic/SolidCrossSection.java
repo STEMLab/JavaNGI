@@ -8,14 +8,14 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class SolidCrossSection extends AbstractFeatureType{ // ��ü������ A0090000
-	private ArrayList<String> name;		// ��Ī
-	private ArrayList<String> classification;		// ����
-	private ArrayList<Double> extension;	// ����
-	private ArrayList<Double> height;		// ����
-	private ArrayList<Double> passingLoad;	// �������
-	private ArrayList<String> material;	// ����
-	private ArrayList<String> sideWalk;	// ����
+public class SolidCrossSection extends AbstractFeatureType{     // 입체교차부 A0090000
+	private ArrayList<String> name;                // 명칭
+	private ArrayList<String> classification;      // 구분
+	private ArrayList<Double> extension;           // 연장
+	private ArrayList<Double> height;              // 높이
+	private ArrayList<Double> passingLoad;         // 통과하중
+	private ArrayList<String> material;            // 재질
+	private ArrayList<String> sideWalk;            // 보도
 	
 	public SolidCrossSection(){
 		super();
@@ -56,7 +56,7 @@ public class SolidCrossSection extends AbstractFeatureType{ // ��ü���
 		return classification.size();
 	}
 	
-	public String getClassificactionN(int n){
+	public String getClassificationN(int n){
 		return classification.get(n);
 	}
 

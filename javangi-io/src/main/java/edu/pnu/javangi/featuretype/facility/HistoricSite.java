@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class HistoricSite extends AbstractFeatureType{ // ������ C0305316
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> etc;					// ��Ÿ
+public class HistoricSite extends AbstractFeatureType{  // 유적지 C0305316
+	private ArrayList<String> name;	               // 명칭
+	private ArrayList<String> etc;                 // 기타
 		
 	public HistoricSite(){
 		super();

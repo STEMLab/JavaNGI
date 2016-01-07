@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class InterChange extends AbstractFeatureType { // ����ü���� A0100000
-	private ArrayList<String> name;	// ��Ī
-	private ArrayList<String> etc;		// ��Ÿ
+public class InterChange extends AbstractFeatureType {  // 인터체인지 A0100000
+	private ArrayList<String> name;        // 명칭
+	private ArrayList<String> etc;         // 기타
 	
 	public InterChange(){
 		super();

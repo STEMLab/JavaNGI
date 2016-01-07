@@ -8,10 +8,10 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Mine extends AbstractFeatureType{ // ���� C0190000
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> state;				// �뵵
-	private ArrayList<String> mineral;				// �ֻ��걤��
+public class Mine extends AbstractFeatureType{  // 광산 C0190000
+	private ArrayList<String> name;        // 명칭
+	private ArrayList<String> state;       // 상태
+	private ArrayList<String> mineral;     // 주 생산광물
 		
 	public Mine(){
 		super();

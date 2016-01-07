@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Reflector extends AbstractFeatureType{ // ���ιݻ�� C0513369
+public class Reflector extends AbstractFeatureType{     // 도로반사경 C0513369
 		
 	public Reflector(){
 		super();

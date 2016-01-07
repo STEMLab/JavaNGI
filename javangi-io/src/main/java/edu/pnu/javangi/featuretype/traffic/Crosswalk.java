@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Crosswalk extends AbstractFeatureType{ // Ⱦ�ܺ��� A0043325
+public class Crosswalk extends AbstractFeatureType{     // 횡단보도 A0043325
 	public Crosswalk(){
 		super();
 		layerName = "A0043325";

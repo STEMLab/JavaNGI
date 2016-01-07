@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Fountain extends AbstractFeatureType{ // �м� C0116313
-	private ArrayList<String> name;					// ��Ī
+public class Fountain extends AbstractFeatureType{      // 분수 C0116313
+	private ArrayList<String> name;	               // 명칭
 		
 	public Fountain(){
 		super();

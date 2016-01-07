@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Castle extends AbstractFeatureType{ // �� C0325315
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> material;				// ����
+public class Castle extends AbstractFeatureType{        // 성 C0325315
+	private ArrayList<String> name;                // 명칭
+	private ArrayList<String> material;            // 재질
 		
 	public Castle(){
 		super();

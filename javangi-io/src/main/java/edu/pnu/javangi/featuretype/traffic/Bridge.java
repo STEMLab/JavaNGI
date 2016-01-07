@@ -8,15 +8,15 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Bridge extends AbstractFeatureType{ // ���� A0070000
-	private ArrayList<String> name;					// ��Ī
-	private ArrayList<String> type;					// ����
-	private ArrayList<Double> extension;			// ����
-	private ArrayList<Double> width;				// ��
-	private ArrayList<String> installationYear;		// ��ġ����
-	private ArrayList<String> material;				// ����
-	private ArrayList<String> riverName;			// ��õ��
-	private ArrayList<String> etc;					// ��Ÿ
+public class Bridge extends AbstractFeatureType{        // 교량 A0070000
+	private ArrayList<String> name;                // 명칭
+	private ArrayList<String> type;                // 종류
+	private ArrayList<Double> extension;           // 연장
+	private ArrayList<Double> width;               // 폭
+	private ArrayList<String> installationYear;    // 설치년도
+	private ArrayList<String> material;            // 재질
+	private ArrayList<String> riverName;           // 하천명
+	private ArrayList<String> etc;                 // 기타
 		
 	public Bridge(){
 		super();

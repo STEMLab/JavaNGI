@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Chimney extends AbstractFeatureType{ // ���� C0486353
+public class Chimney extends AbstractFeatureType{       // 굴뚝 C0486353
 		
 	public Chimney(){
 		super();

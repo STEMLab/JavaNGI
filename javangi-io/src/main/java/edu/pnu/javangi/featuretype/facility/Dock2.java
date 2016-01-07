@@ -8,10 +8,10 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Dock2 extends AbstractFeatureType{ // ����(dock) C0040000
-	private ArrayList<String> purpose;				// �뵵
-	private ArrayList<String> material;				// ����
-	private ArrayList<String> managementAgency;		// �������
+public class Dock2 extends AbstractFeatureType{         // 선거(dock) C0040000
+	private ArrayList<String> purpose;             // 용도
+	private ArrayList<String> material;            // 재질
+	private ArrayList<String> managementAgency;    // 관리기관
 		
 	public Dock2(){
 		super();

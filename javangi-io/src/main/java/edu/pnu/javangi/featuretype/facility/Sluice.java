@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Sluice extends AbstractFeatureType{ // ���� C0060000
-	private ArrayList<String> classification;		// ����
-	private ArrayList<String> material;				// ����
+public class Sluice extends AbstractFeatureType{        // 수문 C0060000
+	private ArrayList<String> classification;      // 구분
+	private ArrayList<String> material;            // 재질
 		
 	public Sluice(){
 		super();

@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Hydrant extends AbstractFeatureType{ // ��ȭ�� C0250000
-	private ArrayList<String> form;					// ����
-	private ArrayList<String> managementAgency;		// �������
+public class Hydrant extends AbstractFeatureType{       // 소화전 C0250000
+	private ArrayList<String> form;	               // 형태
+	private ArrayList<String> managementAgency;    // 관리기관
 		
 	public Hydrant(){
 		super();

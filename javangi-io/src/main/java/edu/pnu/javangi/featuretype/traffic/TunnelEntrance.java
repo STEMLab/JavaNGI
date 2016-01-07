@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class TunnelEntrance extends AbstractFeatureType{ // �ͳ��Ա� A0123373
-	private ArrayList<String> name;		// ��Ī
+public class TunnelEntrance extends AbstractFeatureType{        // 터널입구 A0123373
+	private ArrayList<String> name;                // 명칭
 	
 	public TunnelEntrance(){
 		super();

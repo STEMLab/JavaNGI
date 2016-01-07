@@ -8,13 +8,13 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class PedestrianOverpass extends AbstractFeatureType{ // ���� A0063321
-	private ArrayList<String> name;		// ��Ī
-	private ArrayList<Double> extension;	// ����
-	private ArrayList<Double> width;		// ��
-	private ArrayList<Double> height;		// ����
-	private ArrayList<String> form;		// ����
-	private ArrayList<String> etc;			// ��Ÿ
+public class PedestrianOverpass extends AbstractFeatureType{    // 육교 A0063321
+	private ArrayList<String> name;        // 명칭
+	private ArrayList<Double> extension;   // 연장
+	private ArrayList<Double> width;       // 폭
+	private ArrayList<Double> height;      // 높이
+	private ArrayList<String> form;        // 형태
+	private ArrayList<String> etc;         // 기타
 	
 	public PedestrianOverpass(){
 		super();

@@ -8,11 +8,11 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class RiverPort extends AbstractFeatureType { // ���� A0210000
-	private ArrayList<String> name;			// ��Ī
-	private ArrayList<String> destination;		// �༱��
-	private ArrayList<String> purpose;			// �뵵
-	private ArrayList<String> etc;				// ��Ÿ
+public class RiverPort extends AbstractFeatureType {    // 나루 A0210000
+	private ArrayList<String> name;                // 명칭
+	private ArrayList<String> destination;         // 행선지
+	private ArrayList<String> purpose;             // 용도
+	private ArrayList<String> etc;                 // 기타
 	
 	public RiverPort(){
 		super();

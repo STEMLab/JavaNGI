@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class RoadBoundary extends AbstractFeatureType { // ���ΰ�� A0010000
+public class RoadBoundary extends AbstractFeatureType { // 도로경계 A0010000
 	public RoadBoundary(){
 		super();
 		layerName = "A0010000";

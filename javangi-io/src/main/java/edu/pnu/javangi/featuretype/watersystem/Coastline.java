@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.AbstractFeatureType;
 
-public class Coastline extends AbstractFeatureType{ // �ؾȼ�	E0080000
-	private ArrayList<String> name;						// ��Ī
-	private ArrayList<String> classification;			// ����
+public class Coastline extends AbstractFeatureType{     // 해안선 E0080000
+	private ArrayList<String> name;                // 명칭
+	private ArrayList<String> classification;      // 구분
 		
 	public Coastline(){
 		super();
