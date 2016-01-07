@@ -108,34 +108,20 @@ public class SHPConvertUtil {
                                 Point[] pointArr = new Point[geometries.size()];
                                 geometries.toArray(pointArr);
                                 collection = geometryFactory.createGeometryCollection((Point[]) pointArr);
-                                
-                                writer.write(collection, shapeType);
-                        } else {
-                                if(shapeType == ShapeType.ARC) {
-                                        handler = ShapeType.ARC.getShapeHandler(geometryFactory);
-                                        MultiLineString[] multiLineStringArr = new MultiLineString[geometries.size()];
-                                        for(int i = 0; i < geometries.size(); i++) {
-                                                multiLineStringArr[i] = geometryFactory.createMultiLineString(new LineString[]{(LineString) geometries.get(i)});
-                                        }
-                                        
-                                        collection = geometryFactory.createGeometryCollection(multiLineStringArr);
-                                        /*
-                                        shapeFileLength += 8 + handler.getLength(collection);
-                                        
-                                        writer.writeHeaders(collection.getEnvelopeInternal(), shapeType, collection.getNumGeometries(), shapeFileLength);
-                                        writer.writeGeometry(collection);*/
-                                        
-                                        writer.write(collection, shapeType);
-                                } else if(shapeType == ShapeType.POLYGON) {
-                                        handler = ShapeType.POLYGON.getShapeHandler(geometryFactory);
-                                        Polygon[] polygonArr = new Polygon[geometries.size()];
-                                        geometries.toArray(polygonArr);
-                                        collection = geometryFactory.createMultiPolygon((Polygon[]) polygonArr);
-                                        
-                                        writer.write(collection, shapeType);
+                        } else if(shapeType == ShapeType.ARC) {
+                                handler = ShapeType.ARC.getShapeHandler(geometryFactory);
+                                MultiLineString[] multiLineStringArr = new MultiLineString[geometries.size()];
+                                for(int i = 0; i < geometries.size(); i++) {
+                                        multiLineStringArr[i] = geometryFactory.createMultiLineString(new LineString[]{(LineString) geometries.get(i)});
                                 }
-                                
+                                collection = geometryFactory.createGeometryCollection((MultiLineString[]) multiLineStringArr);
+                        } else if(shapeType == ShapeType.POLYGON) {
+                                handler = ShapeType.POLYGON.getShapeHandler(geometryFactory);
+                                Polygon[] polygonArr = new Polygon[geometries.size()];
+                                geometries.toArray(polygonArr);
+                                collection = geometryFactory.createMultiPolygon((Polygon[]) polygonArr);
                         }
+                        writer.write(collection, shapeType);
                 } catch(FileNotFoundException e) {
                         e.printStackTrace();
                 } catch (IOException e) {
