@@ -103,15 +103,35 @@ public class AbstractFeatureType implements FeatureType {
 		return dataTableName;
 	}
 	
-	public String trimSpace(String str){
-		int startIdx = 0;
-		int endIdx = str.length() - 1;
-		
-		//for(startIdx=0; str.charAt(startIdx)!=' '; startIdx++);
-		for(startIdx=0; str.charAt(startIdx)==' '; startIdx++);
-		for(endIdx=str.length()-1; str.charAt(endIdx)==' '; endIdx--);
-		
-		return str.substring(startIdx, endIdx+1);
+	public String trimSpaceAndQuotes(String str){
+	        String str1 = trimSpace(str);
+	        
+	        return trimQuotes(str1);
+	}
+	
+	public String trimQuotes(String str) {
+	        int startIdx = 0;
+                int endIdx = str.length() - 1;
+
+                if(str.equals("\"\"")) {
+                        return null;
+                }
+                //for(startIdx=0; str.charAt(startIdx)!=' '; startIdx++);
+                for(startIdx=0; str.charAt(startIdx)=='"'; startIdx++);
+                for(endIdx=str.length()-1; str.charAt(endIdx)=='"'; endIdx--);
+                
+                return str.substring(startIdx, endIdx+1);
+	}
+	
+	public String trimSpace(String str) {
+	        int startIdx = 0;
+                int endIdx = str.length() - 1;
+                
+                //for(startIdx=0; str.charAt(startIdx)!=' '; startIdx++);
+                for(startIdx=0; str.charAt(startIdx)==' '; startIdx++);
+                for(endIdx=str.length()-1; str.charAt(endIdx)==' '; endIdx--);
+                
+                return str.substring(startIdx, endIdx+1);
 	}
 
 	public void importDataFromFile(Scanner ngiScanner, Scanner ndaScanner) {

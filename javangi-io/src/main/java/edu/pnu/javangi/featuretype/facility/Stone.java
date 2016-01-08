@@ -102,10 +102,10 @@ public class Stone extends AbstractFeatureType{ // 비석/기념비 C0330000
 		String[] recordDataSplit = recordData.split(",");
 		
 		for(int i=0; i<recordNumSplit.length; i++){
-			recordNumSplit[i] = trimSpace(recordNumSplit[i]);
+			recordNumSplit[i] = trimSpaceAndQuotes(recordNumSplit[i]);
 		}
 		for(int i=0; i<recordDataSplit.length; i++){
-			recordDataSplit[i] = trimSpace(recordDataSplit[i]);
+			recordDataSplit[i] = trimSpaceAndQuotes(recordDataSplit[i]);
 		}
 		
 		recordID.add(Integer.valueOf(recordDataSplit[0]));
