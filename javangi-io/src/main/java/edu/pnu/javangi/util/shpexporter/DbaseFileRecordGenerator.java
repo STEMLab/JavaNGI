@@ -1,4 +1,4 @@
-package edu.pnu.javangi.util;
+package edu.pnu.javangi.util.shpexporter;
 
 import java.util.ArrayList;
 
@@ -428,6 +428,7 @@ public class DbaseFileRecordGenerator {
                         contents.add(f.getClassificationN(idx));
                         contents.add(f.getGradeN(idx));
                         contents.add(f.getNumberN(idx));
+                        contents.add(f.getCoordinateN(idx));
                         contents.add(f.getElevationN(idx));
                 } else if (feature instanceof Bridge) {
                         Bridge f = (Bridge) feature;

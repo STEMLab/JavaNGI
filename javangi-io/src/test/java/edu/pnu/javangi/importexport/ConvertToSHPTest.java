@@ -5,7 +5,7 @@ import java.io.IOException;
 import org.junit.Test;
 
 import edu.pnu.javangi.util.JavaNGI;
-import edu.pnu.javangi.util.ShapeConvertUtil;
+import edu.pnu.javangi.util.shpexporter.ShapeExporter;
 
 public class ConvertToSHPTest {
 
@@ -21,6 +21,6 @@ public class ConvertToSHPTest {
                 JavaNGI javaNGI = new JavaNGI();
                 javaNGI.importDataFromFile(NGIFilePath, NDAFilePath);
                 
-                ShapeConvertUtil.convertNGIToShape("E:\\du_program\\NGI\\sample data\\test", javaNGI.getFeatureTypeList());
+                ShapeExporter.convertNGIToShape("E:\\du_program\\NGI\\sample data\\test", javaNGI.getFeatureTypeList());
         }
 }

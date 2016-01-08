@@ -15,6 +15,7 @@ import java.util.Scanner;
 
 import edu.pnu.javangi.featuretype.FeatureTypeFactory;
 import edu.pnu.javangi.featuretype.FeatureType;
+import edu.pnu.javangi.util.shpexporter.ShapeExporter;
 
 public class JavaNGI {
         private ArrayList<FeatureType> featureTypeList;
@@ -288,6 +289,6 @@ public class JavaNGI {
         }
 
         public void exportToShape() {
-                ShapeConvertUtil.convertNGIToShape(null, featureTypeList);
+                ShapeExporter.convertNGIToShape(null, featureTypeList);
         }
 }
