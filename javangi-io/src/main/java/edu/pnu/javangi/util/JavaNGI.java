@@ -51,18 +51,23 @@ public class JavaNGI {
         public FeatureType getFeatureTypeN(int n) {
                 return featureTypeList.get(n);
         }
-
-        public void importDataFromFile(String NGIFilePath, String NDAFilePath)
-                        throws ClassNotFoundException, InstantiationException,
-                        IllegalAccessException, IOException {
-                int layerID;
-                String layerName;
-
+        
+        public void importDataFromNGI(String NGIFilePath, String NDAFilePath) {
                 this.NGIFilePath = NGIFilePath;
                 this.NDAFilePath = NDAFilePath;
 
                 File NGIFile = new File(NGIFilePath);
                 File NDAFile = new File(NDAFilePath);
+                
+                importDataFromNGI(NGIFile, NDAFile);
+        }
+
+        public void importDataFromNGI(File NGIFile, File NDAFile) {
+                this.NGIFilePath = NGIFile.getAbsolutePath();
+                this.NDAFilePath = NDAFile.getAbsolutePath();
+                
+                int layerID;
+                String layerName;
 
                 Scanner ngiScanner = null;
                 Scanner ndaScanner = null;
@@ -70,85 +75,79 @@ public class JavaNGI {
                         // Load File
                         ngiScanner = new Scanner(NGIFile);
                         ndaScanner = new Scanner(NDAFile);
-                } catch (Exception e) {
-                        e.printStackTrace();
-                }
 
-                boolean validSequence = true;
-                while (validSequence && (ngiScanner.hasNextLine() && ndaScanner.hasNextLine())) {
-                        String ngiStr = ngiScanner.nextLine();
-                        String ndaStr = ndaScanner.nextLine();
-
-                        if (!(ngiStr.equals(NGICommands[0]) && ndaStr.equals(NDACommands[0]))) { // <LAYER_START>
-                                // if(!ndaStr.equals(NDACommands[0])){ // <LAYER_START>
-                                validSequence = false;
-                                continue;
-                        }
-                        ngiStr = ngiScanner.nextLine();
-                        ndaStr = ndaScanner.nextLine();
-
-                        if (!(ngiStr.equals(NGICommands[1]) && ndaStr.equals(NDACommands[1]))) { // $LAYER_ID
-                                // if(!ndaStr.equals(NDACommands[1])){ // $LAYER_ID
-                                validSequence = false;
-                                continue;
-                        }
-                        layerID = Integer.valueOf(ngiScanner.nextLine());
-                        ndaScanner.nextLine();
-
-                        ngiStr = ngiScanner.nextLine();
-                        ndaStr = ndaScanner.nextLine();
-                        if (!(ngiStr.equals(NGICommands[2]) && ndaStr.equals(NDACommands[2]))) { // $END
-                                // if(!ndaStr.equals(NDACommands[2])){ // $END
-                                validSequence = false;
-                                continue;
-                        }
-                        ngiStr = ngiScanner.nextLine();
-                        ndaStr = ndaScanner.nextLine();
-
-                        if (!(ngiStr.equals(NGICommands[3]) && ndaStr.equals(NDACommands[3]))) { // $LAYER_NAME
-                                // if(!ndaStr.equals(NDACommands[3])){ // $LAYER_NAME
-                                validSequence = false;
-                                continue;
-                        }
-                        layerName = ngiScanner.nextLine();
-                        ndaScanner.nextLine();
-
-                        ngiStr = ngiScanner.nextLine();
-                        ndaStr = ndaScanner.nextLine();
-                        if (!(ngiStr.equals(NGICommands[4]) && ndaStr.equals(NDACommands[4]))) { // $END
-                                // if(!ndaStr.equals(NDACommands[4])){ // $END
-                                validSequence = false;
-                                continue;
-                        }
-
-                        FeatureType featuretype = FeatureTypeFactory
-                                        .createFeatureType(layerName);
-                        if (featuretype != null) {
-                                featuretype.setLayerID(layerID);
-                                featuretype.importDataFromFile(ngiScanner, ndaScanner);
-                                featureTypeList.add(featuretype);
-                        } else {
-                                while (ngiScanner.hasNextLine()) {
-                                        ngiStr = ngiScanner.nextLine();
-
-                                        if (ngiStr.equals("<LAYER_END>"))
-                                                break;
+                        boolean validSequence = true;
+                        while (validSequence && (ngiScanner.hasNextLine() && ndaScanner.hasNextLine())) {
+                                String ngiStr = ngiScanner.nextLine();
+                                String ndaStr = ndaScanner.nextLine();
+        
+                                if (!(ngiStr.equals(NGICommands[0]) && ndaStr.equals(NDACommands[0]))) { // <LAYER_START>
+                                        // if(!ndaStr.equals(NDACommands[0])){ // <LAYER_START>
+                                        validSequence = false;
+                                        continue;
                                 }
-                                while (ndaScanner.hasNextLine()) {
-                                        ndaStr = ndaScanner.nextLine();
-
-                                        if (ndaStr.equals("<LAYER_END>"))
-                                                break;
+                                ngiStr = ngiScanner.nextLine();
+                                ndaStr = ndaScanner.nextLine();
+        
+                                if (!(ngiStr.equals(NGICommands[1]) && ndaStr.equals(NDACommands[1]))) { // $LAYER_ID
+                                        // if(!ndaStr.equals(NDACommands[1])){ // $LAYER_ID
+                                        validSequence = false;
+                                        continue;
                                 }
-                        }
-                        /*
-                         * //if(!(ngiStr.equals(NGICommands[5]) && ndaStr.equals(NDACommands[5]))){ // <LAYER_END> if(ndaStr.equals(NDACommands[5])){
-                         * // <LAYER_END> validSequence = false; continue; }
-                         */
-                }
-
-                // Close File
-                try {
+                                layerID = Integer.valueOf(ngiScanner.nextLine());
+                                ndaScanner.nextLine();
+        
+                                ngiStr = ngiScanner.nextLine();
+                                ndaStr = ndaScanner.nextLine();
+                                if (!(ngiStr.equals(NGICommands[2]) && ndaStr.equals(NDACommands[2]))) { // $END
+                                        // if(!ndaStr.equals(NDACommands[2])){ // $END
+                                        validSequence = false;
+                                        continue;
+                                }
+                                ngiStr = ngiScanner.nextLine();
+                                ndaStr = ndaScanner.nextLine();
+        
+                                if (!(ngiStr.equals(NGICommands[3]) && ndaStr.equals(NDACommands[3]))) { // $LAYER_NAME
+                                        // if(!ndaStr.equals(NDACommands[3])){ // $LAYER_NAME
+                                        validSequence = false;
+                                        continue;
+                                }
+                                layerName = ngiScanner.nextLine();
+                                ndaScanner.nextLine();
+        
+                                ngiStr = ngiScanner.nextLine();
+                                ndaStr = ndaScanner.nextLine();
+                                if (!(ngiStr.equals(NGICommands[4]) && ndaStr.equals(NDACommands[4]))) { // $END
+                                        // if(!ndaStr.equals(NDACommands[4])){ // $END
+                                        validSequence = false;
+                                        continue;
+                                }
+        
+                                FeatureType featuretype = FeatureTypeFactory
+                                                .createFeatureType(layerName);
+                                if (featuretype != null) {
+                                        featuretype.setLayerID(layerID);
+                                        featuretype.importDataFromFile(ngiScanner, ndaScanner);
+                                        featureTypeList.add(featuretype);
+                                } else {
+                                        while (ngiScanner.hasNextLine()) {
+                                                ngiStr = ngiScanner.nextLine();
+        
+                                                if (ngiStr.equals("<LAYER_END>"))
+                                                        break;
+                                        }
+                                        while (ndaScanner.hasNextLine()) {
+                                                ndaStr = ndaScanner.nextLine();
+        
+                                                if (ndaStr.equals("<LAYER_END>"))
+                                                        break;
+                                        }
+                                }
+                                /*
+                                 * //if(!(ngiStr.equals(NGICommands[5]) && ndaStr.equals(NDACommands[5]))){ // <LAYER_END> if(ndaStr.equals(NDACommands[5])){
+                                 * // <LAYER_END> validSequence = false; continue; }
+                                 */
+                        }       
                         ngiScanner.close();
                         ndaScanner.close();
                 } catch (Exception e) {
@@ -158,16 +157,21 @@ public class JavaNGI {
                 }
         }
 
-        public void exportDataToFile(String ngiFilePath, String ndaFilePath) {
+        public void exportDataToNGIFile(String ngiFilePath, String ndaFilePath) {
+                File ngiFile = new File(ngiFilePath);
+                File ndaFile = new File(ndaFilePath);
+                exportDataToNGIFile(ngiFile, ndaFile);
+        }
+        public void exportDataToNGIFile(File ngiFile, File ndaFile) {
                 BufferedWriter ngibw = null;
                 PrintWriter ngiWriter = null;
                 BufferedWriter ndabw = null;
                 PrintWriter ndaWriter = null;
                 try {
-                        ngibw = new BufferedWriter(new FileWriter(ngiFilePath));
+                        ngibw = new BufferedWriter(new FileWriter(ngiFile));
                         ngiWriter = new PrintWriter(ngibw, true);
 
-                        ndabw = new BufferedWriter(new FileWriter(ndaFilePath));
+                        ndabw = new BufferedWriter(new FileWriter(ndaFile));
                         ndaWriter = new PrintWriter(ndabw, true);
 
                         //ngiWriter.println("test");
@@ -288,7 +292,11 @@ public class JavaNGI {
                 }
         }
 
-        public void exportToShape() {
-                ShapeExporter.convertNGIToShape(null, featureTypeList);
+        public void exportToShape(File dir) {
+                ShapeExporter.convertNGIToShape(dir, featureTypeList);
+        }
+        
+        public Connection getConnection() {
+                return con;
         }
 }

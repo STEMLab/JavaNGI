@@ -22,7 +22,7 @@ public class javaNGIApp {
         String password = "stem9987";
 
         JavaNGI javaNGI = new JavaNGI();
-        javaNGI.importDataFromFile(NGIFilePath, NDAFilePath);
+        javaNGI.importDataFromNGI(NGIFilePath, NDAFilePath);
         System.out.println(".NGI file -> JavaNGI");
 
         javaNGI.connectToDB(url, user, password);
@@ -36,7 +36,7 @@ public class javaNGIApp {
         String outputNGI = "E:\\du_program\\NGI\\sample data\\test_output2.ngi";
         String outputNDA = "E:\\du_program\\NGI\\sample data\\test_output2.nda";
 
-        javaNGI.exportDataToFile(outputNGI, outputNDA);
+        javaNGI.exportDataToNGIFile(outputNGI, outputNDA);
         System.out.println("JavaNGI -> .NGI file");
     }
 }

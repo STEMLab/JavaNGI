@@ -19,7 +19,7 @@ public class ConvertToSHPTest {
                 String password = "stem9987";
 
                 JavaNGI javaNGI = new JavaNGI();
-                javaNGI.importDataFromFile(NGIFilePath, NDAFilePath);
+                javaNGI.importDataFromNGI(NGIFilePath, NDAFilePath);
                 
                 ShapeExporter.convertNGIToShape("E:\\du_program\\NGI\\sample data\\test", javaNGI.getFeatureTypeList());
         }

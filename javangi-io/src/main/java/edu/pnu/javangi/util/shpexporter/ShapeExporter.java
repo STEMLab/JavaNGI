@@ -26,21 +26,20 @@ import edu.pnu.javangi.featuretype.AbstractFeatureType;
 import edu.pnu.javangi.featuretype.FeatureType;
 
 public class ShapeExporter {
-        private static String folderPath = null;
-
-        private static ArrayList<FeatureType> features = null;
 
         public static void convertNGIToShape(String _folderPath, ArrayList<FeatureType> _features) {
-                folderPath = _folderPath;
-                features = _features;
-
+                File dir = new File(_folderPath);
+                
+                convertNGIToShape(dir, _features);
+        }
+        public static void convertNGIToShape(File dir, ArrayList<FeatureType> features) {
                 for (FeatureType feature : features) {
-                        convertFeatureToShapeWithDBase(feature);
+                        convertFeatureToShapeWithDBase(dir, feature);
                 }
         }
 
-        private static void convertFeatureToShapeWithDBase(FeatureType feature) {
-                String baseFileName = folderPath + "/" + feature.getLayerName() + "_";
+        private static void convertFeatureToShapeWithDBase(File dir, FeatureType feature) {
+                String baseFileName = dir.getPath() + "/" + feature.getLayerName() + "_";
 
                 /*
                  * DBF File Contents

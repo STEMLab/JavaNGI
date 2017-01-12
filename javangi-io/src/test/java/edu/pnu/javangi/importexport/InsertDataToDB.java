@@ -22,7 +22,7 @@ public class InsertDataToDB {
         String password = "stem9987";
 
         JavaNGI javaNGI = new JavaNGI();
-        javaNGI.importDataFromFile(NGIFilePath, NDAFilePath);
+        javaNGI.importDataFromNGI(NGIFilePath, NDAFilePath);
         System.out.println(".NGI file -> JavaNGI");
 
         javaNGI.connectToDB(url, user, password);

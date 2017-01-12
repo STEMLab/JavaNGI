@@ -28,7 +28,7 @@ public class ImportDataFromDB {
         javaNGI.importDataFromDB("test");
         System.out.println("PostGIS -> JavaNGI");
 
-        javaNGI.exportDataToFile(outputNGI, outputNDA);
+        javaNGI.exportDataToNGIFile(outputNGI, outputNDA);
         System.out.println("JavaNGI -> .NGI file");
     }
 }
